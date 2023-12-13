@@ -19,7 +19,6 @@ body {
 	background: #f0f2f5;
 	overflow-x: hidden;
 	overflow-y: hidden;
-	font-family: popp;
 }
 
 a {
@@ -68,8 +67,8 @@ nav {
 }
 
 #navigation-items > a:hover {
-	color: rgb(5, 102, 48) !important;
-	border-bottom: #097b42 solid 1px;
+	color: #eeabeb !important;
+	border-bottom: #ffaffb solid 1px;
 }
 .hamburger {
 	display: none;
@@ -108,7 +107,7 @@ main{
 	font-family: 'Titan One', sans-serif;
 	font-size: 60px;
 	letter-spacing: 4px;
-	color: #097b42;
+	color: #ffaffb;
 	text-shadow: #000000 1px 2px 2px;
 	-webkit-text-stroke: 0.2px rgba(0, 0, 0, 0.411);
 }
@@ -117,14 +116,14 @@ button{
 	width: 120px;
 	border: none;
 	border-radius: 15px;
-	background-color: #097b42;
+	background-color: #ffaffb;
 	color: #f0f2f5;
 	height: 30px;
 }
 
 button:hover{
 	cursor: pointer;
-	background-color: #57e79f;
+	background-color: #ff8cf9;
 	color: #000000;
 	transition: ease-in-out 0.5s;
 }
@@ -138,7 +137,7 @@ button:hover{
 }
 #circulo{
 	border-radius: 50%;
-	background-color: #097b42;
+	background-color: #ffaffb;
 	height: 850px;
 	width: 850px;
 	position: absolute;
@@ -151,6 +150,10 @@ button:hover{
 #Starbucks{
 	font-size: 18px;
 	font-style: italic;
+}
+
+#capuccino{
+    height: 75%;
 }
 
 #redes{
@@ -201,7 +204,7 @@ button:hover{
 		position: absolute;
 		right: 0;
 		top: 60px;
-		background-color: rgb(186, 253, 208);
+		background-color: #ffc0fc;
 		width: 100%;
 		height: calc(100vh - 58px);
 		padding-top: 60px;
