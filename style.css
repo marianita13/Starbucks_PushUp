@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rubik:wght@600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+body {
+	background: #f0f2f5;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	font-family: popp;
+}
+
+a {
+	text-decoration: none;
+	color: #000000 !important;
+}
+
+li {
+	list-style: none;
+}
+
+
+.navigation-header {
+	padding: 0 20px;
+	height: 7%;
+	display: flex;
+	align-items: center;
+	border: 1px solid rgb(206, 203, 203);
+}
+
+nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo-container > a {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 26px;
+}
+
+.navigation-items {
+	display: flex;
+	gap: 40px;
+}
+
+.navigation-items > a {
+	color: ghostwhite;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 16px;
+	transition: .4s ease-in-out;
+}
+
+.navigation-items > a:hover {
+	color: white;
+}
+.hamburger {
+	display: none;
+	font-size: 20px;
+	font-weight: 800;
+	color: rgb(0, 0, 0);
+}
+
+.logo{
+	padding-top: 10px;
+	width: 40px;
+}
+
+
+
+main{
+	height: 93%;
+}
+#division{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+}
+#texto{
+	height: 100%;
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 30px;
+	gap: 50px;
+	font-size: 20px;
+}
+#texto > h2{
+	font-family: 'Titan One', sans-serif;
+	font-size: 60px;
+	letter-spacing: 4px;
+	color: #097b42;
+	text-shadow: #000000 1px 2px 2px;
+	-webkit-text-stroke: 0.2px rgba(0, 0, 0, 0.411);
+}
+
+#imagen{
+	width: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#capuccino{
+	position: absolute;
+	bottom: 15%;
+	right: 200px;
+}
+#circulo{
+	border-radius: 50%;
+	background-color: #097b42;
+	height: 750px;
+	width: 750px;
+	position: absolute;
+	bottom: -340px;
+	right: -120px;
+	z-index: -1;
+}
+
+
+#Starbucks{
+	font-size: 18px;
+	font-style: italic;
+}
+
+#redes{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	position: absolute;
+	right: 30px;
+	top: 40%;
+}
+
+
+#menu-inferior{
+	display: flex;
+	position: absolute;
+	bottom: 5px;
+	left: 45%;
+	gap: 30px;
+}
+#menu-inferior > a > img{
+	width: 55px; 
+}
+
+@media screen and (max-width:768px) {
+	.hamburger {
+		display: flex;
+		cursor: pointer;
+	}
+	.hamburger #closeHam {
+		display: none;
+	}
+	.navigation-items {
+		display: none;
+		flex-direction: column;
+		align-items: center;
+		position: absolute;
+		right: 0;
+		top: 58px;
+		background-color: rgb(209, 252, 223);
+		width: 100%;
+		height: calc(100vh - 58px);
+		padding-top: 60px;
+		gap: 10vh;
+	}
+}
+
+@media screen and (max-width:1215px){
+	#division{
+		flex-direction: column;
+	}
+}
